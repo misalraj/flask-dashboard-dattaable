@@ -1,12 +1,12 @@
 # -*- encoding: utf-8 -*-
 """
-License: Commercial
+License: MIT
 Copyright (c) 2019 - present AppSeed.us
 """
 
 from tests.test_base import check_pages, check_blueprints
 
-@check_pages('/', '/home/index')
+@check_pages()
 def test_pages(base_client):
     # do something
     base_client.post('/', data={})
@@ -14,9 +14,9 @@ def test_pages(base_client):
     # @check_pages decorator
 
 
-@check_blueprints('/forms', '/ui')
-def test_blueprints(base_client):
-    # do something
-    base_client.post('/', data={})
-    # the blueprints are tested (GET request: 200) afterwards by the
-    # @check_blueprints decorator
+#@check_blueprints('/forms', '/ui')
+#def test_blueprints(base_client):
+#    # do something
+#    base_client.post('/', data={})
+#    # the blueprints are tested (GET request: 200) afterwards by the
+#    # @check_blueprints decorator

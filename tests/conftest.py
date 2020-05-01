@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 """
-License: Commercial
+License: MIT
 Copyright (c) 2019 - present AppSeed.us
 """
 
@@ -31,10 +31,10 @@ def user_client():
     db.session.close()
     db.drop_all()
     client = app.test_client()
-    create = {'username': '', 'password': '', 'create_account': ''}
-    login = {'username': '', 'password': '', 'login': ''}
+    create = {'username': 'test', 'email': 'test@appseed.us', 'password': 'pass', 'register': ''}
+    login  = {'username': 'test', 'password': 'pass', 'login': ''}
     with app.app_context():
-        client.post('/create_user', data=create)
+        client.post('/register', data=create)
         client.post('/login', data=login)
         yield client
 
