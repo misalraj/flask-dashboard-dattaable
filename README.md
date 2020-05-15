@@ -3,11 +3,10 @@
 > **Open-Source Admin Dashboard** coded in **Flask Framework** by **AppSeed** [Web App Generator](https://appseed.us/app-generator) - Features:
 
 - UI Kit: **Datta Able Dashboard** (Lite Version) provided by **CodedThemes**
+- Modular design with **Blueprints**
 - SQLite, PostgreSQL, SQLAlchemy ORM
 - Alembic (DB schema migrations)
-- Modular design with **Blueprints**
 - Session-Based authentication (via **flask_login**)
-- Forms validation
 - Deployment scripts: Docker, Gunicorn / Nginx
 - **MIT License**
 - Free support via **Github** 
